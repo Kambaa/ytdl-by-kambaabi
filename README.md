@@ -3,6 +3,7 @@
 Kendi bilgisayarımdan istediğim videoyu indirmek istiyorum, çok mu? :)
 
 yt-dlp'yi kullanarak, windows üzerinde, istediğim sosyal medya videosunu bilgisayarıma indirmek için ayarladığım minik araç.
+![ss](ss.png)
 
 ## Kullanım:
 
@@ -10,7 +11,7 @@ yt-dlp'yi kullanarak, windows üzerinde, istediğim sosyal medya videosunu bilgi
 - Sonrasında size hangi formatta indirmek istediğinizi soracak. `mp4` için 1'e, `mp3` için 2'ye basın. Hiçbirşey yapmazsanız 1 saniye sonra otomatik olarak mp4 seçeneğini seçmektedir.
 - İndirir ve <OTURUM.ADINIZ>\Videolar içerisine kaydedip size bu klasörü otomatik açar.
 
-[![Kullanım Videosu](ss.png)](screen-recorder-fri-sep-29-2023-13-45-33.webm)
+[![Kullanım Videosu](ss2.png)](screen-record.mp4)
 
 ## Kurulum:
 
