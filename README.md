@@ -3,7 +3,7 @@
 Kendi bilgisayarımdan istediğim videoyu indirmek istiyorum, çok mu? :)
 
 yt-dlp'yi kullanarak, windows üzerinde, istediğim sosyal medya videosunu bilgisayarıma indirmek için ayarladığım minik araç.
-![ss](ss.png)
+![ss](banner.gif)
 
 ## Kullanım:
 
