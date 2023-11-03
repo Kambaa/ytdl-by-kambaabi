@@ -70,12 +70,12 @@ goto endofoperation
 
 :mp4download
 echo "MP4 olarak Indiriliyor:" !url!
-call  yt-dlp.exe !url! -f "bv*+ba/b" --cookies-from-browser firefox --restrict-filenames -P %export_dir% -o "%%%%(title)s%%%%(resolution)s.%%%%(ext)s" --ffmpeg-location %filename_ffmpeg% --merge-output-format "mp4" --recode-video "mp4" 
+call  yt-dlp.exe !url! -f "bv*+ba/b" --restrict-filenames -P %export_dir% -o "%%%%(title)s%%%%(resolution)s.%%%%(ext)s" --ffmpeg-location %filename_ffmpeg% --merge-output-format "mp4" --recode-video "mp4" 
 goto :endofoperation
 
 :mp3download
 echo "MP3 olarak Indiriliyor:" !url!
-call yt-dlp.exe !url! --cookies-from-browser firefox -P %export_dir% -o "%%%%(title)s.%%%%(ext)s" --restrict-filenames -f "(bv*+ba/b)" --ffmpeg-location %filename_ffmpeg% --recode-video "mp3"
+call yt-dlp.exe !url! -P %export_dir% -o "%%%%(title)s.%%%%(ext)s" --restrict-filenames -f "(bv*+ba/b)" --ffmpeg-location %filename_ffmpeg% --recode-video "mp3"
 goto endofoperation
 
 
