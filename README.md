@@ -20,5 +20,7 @@ yt-dlp'yi kullanarak, windows üzerinde, istediğim sosyal medya videosunu bilgi
   ![yt-dlp indirme yeri](dl1.png)
 - [gyan ffmpeg builds](https://www.gyan.dev/ffmpeg/builds/) sayfasından full build'i indirin, zip'i açın ve bin klasörü içindeki 3 dosyayı çalıştır.bat dosyasının yanına koyun.
   ![ffpmeg indirme yeri](dl2.png)
+- Bat dosyasını açıp aşağıdaki resimde gösterilen alanları kendi kullanımınıza göre değiştirin:
+![resim](https://github.com/Kambaa/ytdl-by-kambaabi/assets/5601326/c9f207f3-3159-43e0-8681-82c447e69cc2)
 - İndirilen dosyalarla birlikte aşağıdaki resimdeki gibi olunca, kullanıma hazırsınız.
   ![kullanıma hazır hali](dl3.png)
