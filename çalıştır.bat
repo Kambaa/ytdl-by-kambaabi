@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 
 REM cwd bilgisi olarak klasörün bulunduğu yolu yazın
-SET "cwd=Z:\ProgramFiles\ytdl-by-kambaabi"
+SET "cwd=%~dp0"
 REM export_dir bilgisi olarak indirilen videoların nereye kaydedileceğini yazın
 SET "export_dir=%userprofile%\Videos\"
 REM browsername bilgisi olarak oturum açılması gerekecek siteler için (ör. instagram) oturum açılan tarayıcı adını yazın. 
