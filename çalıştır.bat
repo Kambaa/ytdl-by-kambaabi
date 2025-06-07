@@ -16,6 +16,12 @@ SET filename_ffprobe="%cwd%\ffprobe.exe"
 
 set start_checks_fail="false"
 
+REM :: Get current date and time in format YYYY-MM-DD_HH-MM-SS
+for /f "tokens=1-4 delims=/ " %%a in ("%date%") do set curdate=%%d-%%b-%%c
+for /f "tokens=1-4 delims=:,. " %%a in ("%time%") do set curtime=%%a-%%b-%%c
+set datetime=%curdate%_%curtime%
+
+
 IF NOT  EXIST %filename_ytdlp% (
    echo "yt-dlp.exe eksik!"
    echo "Lutfen asagidaki adresten temin ediverin:"
@@ -89,14 +95,16 @@ goto %format%download
 
 goto endofoperation
 
+
+
 :mp4download
 echo "MP4 olarak Indiriliyor:" !url!
-call  yt-dlp.exe !url! -f "bv*+ba/b" %cookieArg%  --restrict-filenames -P %export_dir% -o "%%%%(title)s%%%%(resolution)s.%%%%(ext)s" --ffmpeg-location %filename_ffmpeg% --merge-output-format "mp4" --recode-video "mp4" 
+call  yt-dlp.exe !url! -f "bv*+ba/b" %cookieArg%  --restrict-filenames -P %export_dir% -o "%%%%(title)s%%%%(resolution)s_%datetime%.%%%%(ext)s" --ffmpeg-location %filename_ffmpeg% --recode-video "mp4" 
 goto :endofoperation
 
 :mp3download
 echo "MP3 olarak Indiriliyor:" !url!
-call yt-dlp.exe !url! %cookieArg% -P %export_dir% -o "%%%%(title)s.%%%%(ext)s" --restrict-filenames -f "(bv*+ba/b)" --ffmpeg-location %filename_ffmpeg% --recode-video "mp3"
+call yt-dlp.exe !url! %cookieArg% -P %export_dir% -o "%%%%(title)s_%datetime%.%%%%(ext)s" --restrict-filenames -f "(bv*+ba/b)" --ffmpeg-location %filename_ffmpeg% --recode-video "mp3"
 goto endofoperation
 
 
